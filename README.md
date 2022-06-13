@@ -1,56 +1,37 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# LEADERBOARD
 
-> Description the project.
+> Purpose of this project is to crearte html markup for a leaderboard site .
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- HTML
+- CSS
+- JAVASCRIPT
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- Copy `https://github.com/MICHAELMUNAVU83/leaderboard.git`
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Type git clone `https://github.com/MICHAELMUNAVU83/leaderboard.git`
+- Go to the repository folder in your command prompt `cd  leaderboard`
+- Run npm install to install the dev dependencies for linters and node sass.
 
 
 
-## Authors
 
-👤 **Author1**
+👤 **Michael Munavu**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/MICHAELMUNAVU83)
+<!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle) -->
+<!-- - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
 ## 🤝 Contributing
 

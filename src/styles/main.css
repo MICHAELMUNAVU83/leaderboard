@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  margin-left: 15%;
+}
+
+.add-score-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 20px;
+}
+
+#submit-button {
+  margin-top: 30px;
+  background-color: white;
+  outline: black;
+  width: 40%;
+  align-self: flex-end;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: row;
+}
+
+#refresh {
+  margin-left: 40px;
+  height: 30px;
+  margin-top: 15px;
+  background-color: white;
+  outline: black;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+.score-spans {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.each-score {
+  padding-top: 10px;
+}
+
+.score-spans .each-score:nth-child(odd) {
+  background: rgb(218, 218, 218);
+}
