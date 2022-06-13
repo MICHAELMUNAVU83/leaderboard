@@ -1,2 +1,2 @@
 import './styles/main.css';
-import './interactive.js';
+import './html-markup.js';

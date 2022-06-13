@@ -1,28 +1,28 @@
 const boards = [
   {
-    name: "Name",
+    name: 'Name',
     score: 100,
   },
   {
-    name: "Name",
+    name: 'Name',
     score: 340,
   },
   {
-    name: "Name",
+    name: 'Name',
     score: 60,
   },
   {
-    name: "Name",
+    name: 'Name',
     score: 80,
   },
   {
-    name: "Name",
+    name: 'Name',
     score: 10,
   },
 ];
 
 boards.forEach((board) => {
-  document.querySelector(".score-spans").innerHTML += `
+  document.querySelector('.score-spans').innerHTML += `
         <div class="each-score">
                         <span>${board.name} :</span><span>${board.score}</span>
     
@@ -32,4 +32,4 @@ boards.forEach((board) => {
         `;
 });
 
-localStorage.setItem('Names and scores' ,JSON.stringify(boards))
+localStorage.setItem('Names and scores', JSON.stringify(boards));
