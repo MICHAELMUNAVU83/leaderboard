@@ -24,7 +24,7 @@ document.getElementById('submit-button').addEventListener('click', async (e) => 
 
   );
   const afterContent = await content.json();
-  console.log(afterContent);
+  return afterContent;
 });
 
 document.getElementById('refresh').addEventListener('click', async (e) => {
