@@ -1,31 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300&family=Kdam+Thmor+Pro&family=Roboto+Mono:wght@100&family=Titillium+Web:wght@200&display=swap');
 .container {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
 }
-
-h1 {
-  margin-left: 15%;
-}
-
-.add-score-div {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+span{
+  margin-left: 10px;
 }
 
 input {
   margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+
 }
 
 #submit-button {
   margin-top: 30px;
-  background-color: white;
-  outline: black;
+  background-color:pink;
+  border: none;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-bottom: 20px;
   width: 40%;
+  height: 50px;
+  width: 80px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   align-self: flex-end;
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#submit-button:hover{
+  background-color:#002ead;
+  transition: 0.5s;
+  color: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .recent-scores {
@@ -33,26 +48,113 @@ input {
   flex-direction: row;
 }
 
+
 #refresh {
-  margin-left: 40px;
-  height: 30px;
-  margin-top: 15px;
-  background-color: white;
-  outline: black;
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
+  margin-top: 10px;
+  background-color:pink;
+  border: none;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 40%;
+  height: 50px;
+  width: 80px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  align-self: flex-end;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+ 
 }
+h1{
+  color: blue;
+  text-shadow: pink;
+  
+
+}
+
+h2{
+
+    color: blue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+}
+button{
+  
+  font-family: 'Crete Round', serif;
+  font-size: 20px;
+}
+
+#refresh:hover {
+  background-color:#002ead;
+  transition: 0.5s;
+  color: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
 
 .score-spans {
   display: flex;
+  width: 100%;
+  font-family: 'Kanit', sans-serif;
   justify-content: space-between;
   flex-direction: column;
-  border: 2px solid black;
+  border: 2px solid pink;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-
+.score-spans .each-score:nth-child(even) {
+  background:white;
+  color: black;
+ 
+  
+}
+.score-spans .each-score:nth-child(odd) {
+  
+  background:pink;
+  opacity: 92%;
+  color: black;
+  
+}
 .each-score {
   padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.score-spans .each-score:nth-child(odd) {
-  background: rgb(218, 218, 218);
+.add-score-div{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 65%;
+  width: 30%;
+  border-radius: 10px;
+  outline: 1px solid pink;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.add-score-div h2{
+  margin-left: 15px;
+}
+
+#userinput , #score-input{
+  padding: 10px;
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 45px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
