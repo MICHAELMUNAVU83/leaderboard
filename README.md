@@ -23,6 +23,7 @@ To get a local copy up and running follow these simple example steps.
 - Type git clone `https://github.com/MICHAELMUNAVU83/leaderboard.git`
 - Go to the repository folder in your command prompt `cd  leaderboard`
 - Run npm install to install the dev dependencies for linters and node sass.
+- Run npm start to run the website from your local machine
 
 
 
