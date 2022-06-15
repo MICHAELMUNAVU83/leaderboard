@@ -5,39 +5,40 @@ class Store {
   }
 }
 document
-  .getElementById("submit-button")
-  .addEventListener("click", async (e) => {
+  .getElementById('submit-button')
+  .addEventListener('click', async (e) => {
     e.preventDefault();
-    const uservalue = document.getElementById("userinput").value;
-    const scorevalue = document.getElementById("score-input").value;
+    const uservalue = document.getElementById('userinput').value;
+    const scorevalue = document.getElementById('score-input').value;
 
-    document.getElementById("score-input").value = " ";
-    document.getElementById("userinput").value = " ";
+    document.getElementById('score-input').value = ' ';
+    document.getElementById('userinput').value = ' ';
 
     const newScore = new Store(uservalue, scorevalue);
 
     const content = await fetch(
-      "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM55uY/scores/",
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM55uY/scores/',
       {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newScore),
-      }
+      },
     );
+    return content;
   });
 
-document.getElementById("refresh").addEventListener("click", async (e) => {
+document.getElementById('refresh').addEventListener('click', async (e) => {
   e.preventDefault();
-  document.querySelector(".score-spans").innerHTML = "";
+  document.querySelector('.score-spans').innerHTML = '';
 
   const request = await fetch(
-    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM55uY/scores/"
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM55uY/scores/',
   );
 
   const data = await request.json();
   const getContent = async (data) => {
     data.result.forEach((board) => {
-      document.querySelector(".score-spans").innerHTML += `
+      document.querySelector('.score-spans').innerHTML += `
           <div class="each-score">
                           <span>${board.user} :</span><span>${board.score}</span>
       
@@ -49,15 +50,15 @@ document.getElementById("refresh").addEventListener("click", async (e) => {
   };
   getContent(data);
 });
-window.addEventListener("load", async () => {
+window.addEventListener('load', async () => {
   const request = await fetch(
-    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoituyoiM55uY/scores/"
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoituyoiM55uY/scores/',
   );
 
   const data = await request.json();
   const getContent = async (data) => {
     data.result.forEach((board) => {
-      document.querySelector(".score-spans").innerHTML += `
+      document.querySelector('.score-spans').innerHTML += `
           <div class="each-score">
                           <span>${board.user} :</span><span>${board.score}</span>
       
