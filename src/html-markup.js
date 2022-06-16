@@ -17,7 +17,7 @@ document
     const newScore = new Store(uservalue, scorevalue);
 
     const content = await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM55uY/scores/',
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM78uY/scores/',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -32,7 +32,7 @@ document.getElementById('refresh').addEventListener('click', async (e) => {
   document.querySelector('.score-spans').innerHTML = '';
 
   const request = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM55uY/scores/',
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoiyuhoiM78uY/scores/',
   );
 
   const data = await request.json();
@@ -52,7 +52,7 @@ document.getElementById('refresh').addEventListener('click', async (e) => {
 });
 window.addEventListener('load', async () => {
   const request = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoituyoiM55uY/scores/',
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BTEFhiuCoituyoiM78uY/scores/',
   );
 
   const data = await request.json();
